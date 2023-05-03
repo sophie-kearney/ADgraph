@@ -1,4 +1,4 @@
-GO_term,description,source,sink,avg_pvalue,avg_pvalue_adj,avg_qvalue
+source,sink,GO_term,description,avg_pvalue,avg_pvalue_adj,avg_qvalue
 Ldlr,Igf1,GO:0150079,negative regulation of neuroinflammatory response,0.000345020000917644,0.00143398937881396,0.000653469899398842
 Madd,Bloc1s3,GO:0047496,vesicle transport along microtubule,0.169656080498217,0.234285104241308,0.106763875493863
 Fgf1,Ptn,GO:2000345,regulation of hepatocyte proliferation,0.00350802220197558,0.00986167819578387,0.00449397321466403

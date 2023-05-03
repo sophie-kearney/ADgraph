@@ -1,4 +1,4 @@
-GO_term,description,source,sink,avg_pvalue,avg_pvalue_adj,avg_qvalue
+source,sink,GO_term,description,avg_pvalue,avg_pvalue_adj,avg_qvalue
 ROBO1,JCAD,GO:1900746,regulation of vascular endothelial growth factor signaling pathway,0.0255613833357577,0.0875711308237231,0.0586444532814014
 APOE,NOS3,GO:0010544,negative regulation of platelet activation,0.0290335206619672,0.0942111380423549,0.0630911195452533
 SLC6A4,FANCD2,GO:0048854,brain morphogenesis,0.0825006479745693,0.196217757344922,0.131402700814254

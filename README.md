@@ -26,12 +26,13 @@ Node attributes:
 - consequence = string. category of variant, explains the biological consequence of that nucleotide being altered
 - rs_id = string (format is rs<unqiue integer>). Identifier for the genetic variant that is used across biology when referencing that identifier. Should be unique within a species, but there could be duplicates between human and mouse variants, I am not sure.
 - species = string. Species that the variant is associated with, either mice (Mus musculus) or human (Homo sapiens)
-- chromosome = categorical discrete integer. chromosome that the gene is found on. Senteny analysis has not been performed on this yet, but I am working on this so we can compare between mouse and human chromosomes. There are some non-numerical chromosomes like the X and Y chromosomes.
+- chromosome = categorical discrete integer. chromosome that the gene is found on. Senteny analysis has not been performed on this yet, but I am working on this so we can compare between mouse and human chromosomes. There are some non-numerical chromosomes like the X and Y chromosomes. Senteny analysis has been performed so this attribute can be used to compare human and mouse chromosomes.
 - human_biotype = string, discrete categories. very similar to the consequence attribute, just called different things in different databases
 - tissue = string, discrete categories (I think there are around 7 different tissue effected). only for mouse variants, denotes the tissue that this variant impacts (ex: liver, bone)
-- location = integer, represents the number base pairs away from the start of the chromosome this variant is at. location of variant within a chromosome, denotes the number of bases along a chromosome that this variant occurs
+- location = integer, represents the number base pairs away from the start of the chromosome this variant is at. location of variant within a chromosome, denotes the number of bases along a chromosome that this variant occurs. mouse variants will not have a location because of the senteny analysis.
 - alleles = two characters separated by a /. denotes the change in base that the variant causes (ex: G/T means that in the original DNA there was a G, but with the variant, it is now a T)
 - source = string. This is for the human variants, it shows the database that the human variant was found linked to Alzheimer's
+- jaccard_similarity = this score measure the similarity between the GO terms that this variant's gene impacts vs the GO terms that Alzheimer's Disease impacts. It scores the similarity between the biological impact of this gene against the biological impact of Alzheimer's disease. The higher the score, the better. Some variants will not have a score because they were not found in the GO database.
 
 Edge attributes:
 - average_pvalue = float. Takes the average of each variant's pvalue related to the GO term that links them. This is a way to score their relatedness to the GO term

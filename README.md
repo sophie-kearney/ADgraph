@@ -11,10 +11,15 @@ Notes about graph:
 ---
 
 **collapsed.graphml** = exported neo4j graph in graphml format
+
 **edges.json** = contains data for the edges between nodes in json format, same information as what is in collapsed graph
+
 **nodes.json** = contains data of the nodes in json format, same information as what is in collapsed graph
 
+**corrected_nodes.csv** = there were issues with the data parsing from the original human variants file from the GWAS source. this file contains the corrected chromosomes.
+
 **data directory** = contains intermediate data files that hold edge and node data
+
 **scripts directory** = contains scripts used to parse data
 
 ---
